@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: #132936;
+    }
+    #graph{
+        display: block;
+        margin: auto;
+        background: #132936;
+        height: 50vh;
+        width: 100vw;
+    }#input{
+        background: #132936;
+        height: auto;
+        width: 100vw;
+        height: 50vh;
+       
+        
+    }
+    input{
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        overflow: hidden;
+    }
+    button{
+     display: inline-block;
+        margin:4px;
+    }
+    #inputSpan{
+   
+     
+        
+        background: #132936;
+    }  #outputSpan{
+        
+     
+        
+        background: #132936a9;
+    }
+    h1,h2,h3{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin: 0;
+    }
+    #mydiv{
+        background: #132936;
+        justify-content: center;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+   </style>
+</head>
+<body>
+    <h1><center>Graph App utility</center></h1>
+    <div class="" id="graph"></div>
+    <div class="" id="input">
+        <div id="inputSpan">
+            <center>
+
+                <h2>Enter your Data.</h2>
+                <input type="text" id="myData" name="myData">
+                <button onclick="create()"><h3>Create</h3></button>
+                <button onclick="change()"><h3>edit</h3></button>
+            </center>
+        </div>
+        <div id="outputSpan">
+           
+        </div>
+          
+        
+       
+    </div>
+
+    <script src="d3.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
